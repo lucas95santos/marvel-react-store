@@ -1,7 +1,14 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+// routes
+import Routes from './routes';
 
-const App: React.FunctionComponent = () => {
-  return <h1>Marvel Store</h1>;
+const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 };
 
 export default App;
