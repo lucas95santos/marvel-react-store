@@ -1,9 +1,7 @@
 import React from 'react';
 
-function App() {
-  return (
-    <h1>Marvel Store</h1>
-  );
-}
+const App: React.FunctionComponent = () => {
+  return <h1>Marvel Store</h1>;
+};
 
 export default App;

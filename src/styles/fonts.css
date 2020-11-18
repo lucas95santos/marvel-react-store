@@ -1,33 +1,33 @@
 /* Bebas Neue */
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url('../assets/fonts/BebasNeue/BebasNeue-Regular.ttf');
-    font-weight: 400;
+  font-family: 'Bebas Neue';
+  src: url('../assets/fonts/BebasNeue/BebasNeue-Regular.ttf');
+  font-weight: 400;
 }
 
 /* Roboto */
 
 @font-face {
-    font-family: 'Roboto Light';
-    src: url('../assets/fonts/Roboto/Roboto-Light.ttf');
-    font-weight: 300;
+  font-family: 'Roboto Light';
+  src: url('../assets/fonts/Roboto/Roboto-Light.ttf');
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: 'Roboto Regular';
-    src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
-    font-weight: 400;
+  font-family: 'Roboto Regular';
+  src: url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Roboto Medium';
-    src: url('../assets/fonts/Roboto/Roboto-Medium.ttf');
-    font-weight: 500;
+  font-family: 'Roboto Medium';
+  src: url('../assets/fonts/Roboto/Roboto-Medium.ttf');
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Roboto Bold';
-    src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
-    font-weight: 700;
+  font-family: 'Roboto Bold';
+  src: url('../assets/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: 700;
 }
