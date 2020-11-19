@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
 import md5 from 'md5';
 // icons
-import { FiPlusCircle } from 'react-icons/fi';
+import { MdAddShoppingCart } from 'react-icons/md';
 // style
 import './style.css';
 // services
@@ -100,9 +100,9 @@ const Home: React.FC = () => {
 
               <button type="button">
                 <div className="icon-area">
-                  <FiPlusCircle />
+                  <MdAddShoppingCart />
                 </div>
-                Adicionar
+                Adicionar ao carrinho
               </button>
             </li>
           ))}
