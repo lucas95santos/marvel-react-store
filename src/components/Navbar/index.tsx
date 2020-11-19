@@ -1,10 +1,10 @@
 import React from 'react';
 // styles
 import './style.css';
-// images
-import { ImSearch } from 'react-icons/im';
-import logoImg from '../../assets/images/logo.png';
 // icons
+import { ImSearch } from 'react-icons/im';
+// images
+import logoImg from '../../assets/images/logo.png';
 
 const Navbar: React.FC = () => {
   return (

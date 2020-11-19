@@ -23,6 +23,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: #f5f5fa;
+}
+
 body,
 h1,
 h2,

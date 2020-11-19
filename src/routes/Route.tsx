@@ -8,6 +8,7 @@ interface RouteWrapperProps extends RouteProps {
 
 const RouteWrapper: React.FunctionComponent<RouteWrapperProps> = ({
   component: Component,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   isPrivate,
   ...rest
 }) => {
