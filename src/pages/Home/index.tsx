@@ -69,14 +69,14 @@ const Home: React.FC = () => {
         <div className="main-title">
           <h3>Encontre aqui as melhores HQ&apos;s</h3>
         </div>
-        <ul>
+        <ul className="comics">
           {comics.map((comic) => (
-            <li key={comic.id}>
-              {comic.title}
+            <li key={comic.id} className="comics__item">
               <img
                 src={`${comic.thumbnail.path}/portrait_xlarge.${comic.thumbnail.extension}`}
                 alt=""
               />
+              <span className="comics__item__title">{comic.title}</span>
             </li>
           ))}
         </ul>
