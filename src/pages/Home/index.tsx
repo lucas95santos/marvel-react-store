@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, MutableRefObject } from 'react';
 import md5 from 'md5';
+// icons
+import { FiPlusCircle } from 'react-icons/fi';
 // style
 import './style.css';
 // services
@@ -9,6 +11,7 @@ import { IComic } from '../../types/Comic';
 
 const Home: React.FC = () => {
   const [comics, setComics] = useState<IComic[]>([]);
+  const comicsRef = useRef<HTMLDivElement>();
 
   useEffect(() => {
     loadComics();
@@ -51,6 +54,14 @@ const Home: React.FC = () => {
     );
   };
 
+  const scrollToSection = (
+    section: MutableRefObject<HTMLDivElement | undefined>,
+  ) => {
+    if (section.current) {
+      window.scroll(0, section.current.offsetTop - 120);
+    }
+  };
+
   return (
     <div className="home-content">
       <header>
@@ -61,11 +72,13 @@ const Home: React.FC = () => {
             melhores preços do mercado. Divirta-se com as histórias e sagas dos
             heróis mais famosos mundo.
           </h2>
-          <button type="button">Explorar quadrinhos</button>
+          <button type="button" onClick={() => scrollToSection(comicsRef)}>
+            Explorar quadrinhos
+          </button>
         </div>
       </header>
 
-      <main>
+      <main ref={comicsRef as any}>
         <div className="main-title">
           <h3>Encontre aqui as melhores HQ&apos;s</h3>
         </div>
@@ -77,6 +90,20 @@ const Home: React.FC = () => {
                 alt=""
               />
               <span className="comics__item__title">{comic.title}</span>
+              <span
+                className={`comics__item__price ${
+                  comic.price === 0 ? 'comics__item__price--free' : ''
+                }`}
+              >
+                {comic.price > 0 ? `$${comic.price}` : 'Grátis'}
+              </span>
+
+              <button type="button">
+                <div className="icon-area">
+                  <FiPlusCircle />
+                </div>
+                Adicionar
+              </button>
             </li>
           ))}
         </ul>
